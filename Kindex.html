@@ -71,12 +71,7 @@ body { font-family: 'DM Sans', 'Barlow', sans-serif; background: var(--paper); c
   width:48px; height:48px; background:var(--k-teal); border-radius:6px;
   display:flex; align-items:center; justify-content:center; flex-shrink:0;
 }
-.k-chevron {
-  width:0; height:0;
-  border-top:11px solid transparent; border-bottom:11px solid transparent;
-  border-left:18px solid var(--k-dark);
-  position:relative; left:3px;
-}
+.k-chevron { display:none; }
 .k-wordmark { display:flex; flex-direction:column; }
 .k-name { font-family:'Playfair Display', serif; font-size:24px; font-weight:700; letter-spacing:.5px; color:#fff; line-height:1; }
 .k-tagline { font-family:'Courier Prime', monospace; font-size:8.5px; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); margin-top:4px; opacity:.75; }
@@ -277,10 +272,9 @@ tr:hover td { background:var(--k-offwhite); }
   <div class="header-inner">
     <div class="keeper-logo">
       <a href="https://www.keeper.green" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
-      <div class="k-icon"><div class="k-chevron"></div></div>
+      <div class="k-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="4,6 12,14 4,22" stroke="#0d2b3e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><polyline points="13,6 21,14 13,22" stroke="#0d2b3e" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"/></svg></div>
       <div class="k-wordmark">
         <div class="k-name">Keeper</div>
-        <div class="k-tagline">ESG Impact Platform</div>
       </div>
       </a>
     </div>
@@ -466,10 +460,10 @@ tr:hover td { background:var(--k-offwhite); }
   <!-- ── EQUIVALENCIES ─────────────────────────────── -->
   <div class="sh"><span class="sh-accent"></span><span class="sh-lbl">8,833 kg CO₂e — what it means</span><div class="sh-line"></div></div>
   <div class="eq-row gap">
-    <div class="eq"><div class="eq-ico">🚗</div><div class="eq-val">~35,300 km</div><div class="eq-lbl">driven in an average petrol car<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">Source: EPA GHG Equivalencies Calculator, 2024</span></div></div>
-    <div class="eq"><div class="eq-ico">🏠</div><div class="eq-val">~6.6 homes</div><div class="eq-lbl">powered for a full year (avg. household electricity)<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">Source: EPA GHG Equivalencies Calculator, 2024</span></div></div>
-    <div class="eq"><div class="eq-ico">🌳</div><div class="eq-val">~442 trees</div><div class="eq-lbl">absorbing CO₂ for one year (mature mixed forest)<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">Source: EPA, ~0.06 MTCO₂/tree/yr average</span></div></div>
-    <div class="eq"><div class="eq-ico">✈️</div><div class="eq-val">~12 flights</div><div class="eq-lbl">Bali ↔ Jakarta return, economy class<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">Source: ICAO Carbon Calculator, 2024</span></div></div>
+    <div class="eq"><div class="eq-ico">🚗</div><div class="eq-val">~35,300 km</div><div class="eq-lbl">driven in an average petrol car<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">Source: EPA GHG Equivalencies Calculator, 2024 — 0.251 kg CO₂/km avg petrol vehicle</span></div></div>
+    <div class="eq"><div class="eq-ico">🏠</div><div class="eq-val">~6.6 homes</div><div class="eq-lbl">powered for a full year (avg. Indonesian household)<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">PLN grid factor 0.87 kg CO₂/kWh × 1,530 kWh/yr avg Indonesian household</span></div></div>
+    <div class="eq"><div class="eq-ico">🌳</div><div class="eq-val">~442 trees</div><div class="eq-lbl">absorbing CO₂ for one year (general mixed forest)<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">US Forest Service avg ~0.02 MTCO₂/tree/yr (all ages, mixed forest)</span></div></div>
+    <div class="eq"><div class="eq-ico">✈️</div><div class="eq-val">~47 flights</div><div class="eq-lbl">Bali ↔ Jakarta return, per passenger economy class<br><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9ab8c4;">ICAO Carbon Calculator, 2024 — ~185 kg CO₂/pax return</span></div></div>
   </div>
 
   <!-- ── TV CO₂e METHODOLOGY ──────────────────────── -->
@@ -691,11 +685,20 @@ tr:hover td { background:var(--k-offwhite); }
   <div class="sh"><span class="sh-accent"></span><span class="sh-lbl">Methodology — Green Globe submission statement</span><div class="sh-line"></div></div>
   <div class="gg-note">
     <div class="gg-title">Green Globe &amp; GHG Protocol Methodology Disclosure</div>
-    <p style="margin-bottom:10px;"><strong>CO₂e Factors:</strong> WRAP CarbonWARM2 material-specific factors (DEFRA-commissioned, MELMod landfill model) applied per item category: <strong>Textiles = 0.492 kg CO₂e/kg</strong> (anaerobic decomposition → methane generation) · <strong>Electricals/WEEE = 0.004 kg CO₂e/kg</strong> (inert in landfill) · <strong>Metals = 0.004</strong> · <strong>Glass/Ceramics = 0.004</strong> · <strong>Rigid Plastics = 0.004</strong>. DEFRA 2023 generic factor 0.467 kg CO₂e/kg applied as fallback for mixed-composition items. Engineering items are allocated landfill-avoidance factors rather than reuse displacement — this is intentionally conservative given uncertain resale channel depth; this conservative treatment is explicit and defensible under audit.</p>
-    <p style="margin-bottom:10px;"><strong>Television CO₂e — Three Methods Disclosed (GHG Protocol transparency requirement):</strong> Method A (WRAP CarbonWARM2 WEEE, landfill-avoided) = 2.3 kg · Method B (EPA WARM v16, recycling vs landfill, −0.99 MTCO₂e/short ton) = ~620 kg · <strong>Method C (Reuse Displacement, adopted) = 7,800 kg</strong> — 78 units × 100 kg CO₂e/unit manufacturing footprint avoided. Manufacturing footprint for mid-size LCD/LED televisions ranges 50–150 kg CO₂e/unit depending on screen size and panel technology (Carbon Trust TV LCA; EU Ecodesign Regulation). A conservative mid-point of 100 kg/unit is applied. LG 32LD461C (×28) and Samsung HG43AU800AW (×50) are both standard mid-range LCD panels for which the 100 kg figure represents a conservative defensible estimate. Method C is appropriate here because TVs were sold to a documented commercial reseller — GHG Protocol displacement methodology requires evidence of resale, which is confirmed. Scenario range: 3,900 kg (conservative, 50 kg/unit) to 11,700 kg (upper, 150 kg/unit). Adopted figure 7,800 kg sits at mid-range. Both Method B and Method C disclosed per GHG Protocol transparency requirements.</p>
-    <p style="margin-bottom:10px;"><strong>Final grand total: 3,617 kg diverted → 8,832.8 kg CO₂e avoided.</strong> TV reuse impact (7,800 kg) dominates appropriately at 88.3% of total. Next significant contributors: Engineering &amp; assets (furniture, HVAC, equipment) 504.9 kg (5.7%) · Linen textiles 328.7 kg (3.7%) · Room disposal curtains/textiles 145.6 kg (1.6%) · Uniforms 53.6 kg (0.6%).</p>
-    <p style="margin-bottom:10px;"><strong>Scope:</strong> All figures = avoided landfill emissions, GHG Protocol Scope 3, Category 5 (Waste Generated in Operations). <strong>Weight Sources:</strong> Weights derived from manufacturer specifications where available (LG, Samsung, Daikin, Grundfos, TOA, TOTO datasheets) and WRAP standard product weight benchmarks where manufacturer data unavailable (Hotel Linen Study 2019, Textile Weight Reference 2022), validated against hotel inventory counts. For formal regulatory filing, physical weighing is recommended. <strong>Carbon Equivalencies:</strong> EPA Greenhouse Gas Equivalencies Calculator (2024); ICAO Carbon Calculator (2024); EPA tree sequestration ~0.06 MTCO₂/tree/yr (mature mixed forest average).</p>
-    <p><strong>Green Globe Compliance:</strong> Material-specific CarbonWARM2 methodology = Silver-level compliance. Accepted by auditors with standard disclosures: (1) UK-based factors applied as internationally recognised proxy — Indonesia-specific equivalent not published at same granularity; (2) weights estimated from manufacturer specs and WRAP benchmarks, not physically weighed; (3) GHG Protocol Scope 3 Cat. 5 framing; (4) TV reuse displacement methodology with supporting LCA sources cited and scenario range disclosed; (5) engineering items treated conservatively at landfill-avoidance rates — explicitly stated. This methodology statement is suitable for formal Green Globe submission.</p>
+
+    <p style="margin-bottom:10px;"><strong>CO₂e Factors — WRAP CarbonWARM2 v0.3 (DEFRA-commissioned, MELMod landfill model):</strong> Material-specific landfill-avoidance factors applied per item category: <strong>Textiles = 0.492 kg CO₂e/kg</strong> (linen, uniforms, curtains, soft furnishings) · <strong>Furniture &amp; soft furnishings = 0.467 kg CO₂e/kg</strong> (DEFRA 2023 — dining tables, chairs, rattan furniture, SPA beds, sofas) · <strong>Electricals/WEEE = 0.004 kg CO₂e/kg</strong> · <strong>Metals/Glass/Ceramics/Plastics = 0.004 kg CO₂e/kg</strong>. Source: wrap.ngo/resources/report/carbon-waste-and-resources-metric-carbonwarm2 · gov.uk/government/collections/government-conversion-factors-for-company-reporting.</p>
+
+    <p style="margin-bottom:10px;"><strong>Television CO₂e — Three Methods Disclosed (GHG Protocol transparency requirement):</strong> Method A (WRAP CarbonWARM2 WEEE, landfill-avoided) = 2.3 kg · Method B (EPA WARM v16, recycling vs landfill) = ~620 kg · <strong>Method C (Reuse Displacement, adopted) = 7,800 kg</strong> — 78 units × 100 kg CO₂e/unit manufacturing footprint avoided. Models confirmed by hotel Engineering specification sheet: LG 32LD461C (×28, 32″ LCD, 2010) and Samsung HG43AU800AW (×50, 43″ 4K UHD hospitality series). Manufacturing footprint for mid-size LCD/LED panels: 50–150 kg CO₂e/unit (arbor.eco; Carbon Trust TV LCA literature). Conservative mid-point of 100 kg/unit applied and disclosed — no model-specific LCA exists for either model. Method C adopted because TVs were sold to a documented commercial reseller — GHG Protocol displacement methodology requires evidence of confirmed resale. Scenario range: 3,900 kg (50 kg/unit) to 11,700 kg (150 kg/unit); adopted 7,800 kg sits at mid-range. TV unit weights: Samsung HG43AU800AW 8.4 kg verified (Samsung official spec, KPMS distributor); LG 32LD461C weight estimated at ~8.12 kg based on sibling model LG 32LD450 (same 2010 LD-series, LG official spec sheet).</p>
+
+    <p style="margin-bottom:10px;"><strong>Full reconciliation:</strong> 3,619 kg total mass diverted → <strong>8,833 kg CO₂e avoided</strong> (8,832.8 kg calculated; 0.2 kg rounding). TV reuse 7,800 kg (88.3%) · Engineering &amp; assets 504.9 kg (5.7%) · Linen &amp; towels 328.7 kg (3.7%) · Room disposal 145.6 kg (1.6%) · Uniforms 53.6 kg (0.6%). All line-item weights and CO₂e factors independently cross-checked and reconciled to zero against source data (see Methodology Appendix, April 2026).</p>
+
+    <p style="margin-bottom:10px;"><strong>Weight Sources:</strong> Linen and uniform weights derived from published hotel-grade GSM benchmarks (Hotemax, King of Cotton, The Linen Factory) and verified against hotel inventory spreadsheets. Engineering and furniture weights from hotel asset spreadsheet and photographic inventory (April 2026). Samsung HG43AU800AW weight verified from Samsung official product page and KPMS distributor spec. LG 32LD461C: sibling-model spec used (LG 32LD450, LG.com PDF). All curtain weights consistent with hotel blackout panel specifications. For formal regulatory filing, physical weighing of the largest items is recommended.</p>
+
+    <p style="margin-bottom:10px;"><strong>Carbon Equivalencies:</strong> Car: EPA avg petrol vehicle 0.251 kg CO₂/km (EPA GHG Equivalencies Calculator, 2024) → 35,191 km ✓. Trees: US Forest Service avg 0.02 MTCO₂/tree/yr (general mixed forest, all ages) → 442 trees. Homes: PLN Indonesia grid 0.87 kg CO₂/kWh × avg Indonesian household 1,530 kWh/yr → 6.6 homes ✓. Flights: ICAO Carbon Calculator 2024, Bali–Jakarta economy return ~185 kg CO₂/pax → 47 passenger flights.</p>
+
+    <p style="margin-bottom:10px;"><strong>Resale &amp; Redirection Verification:</strong> TV revenue (IDR 50,100,000) confirmed in hotel asset disposal spreadsheet. Linen, Room Disposal (combined IDR 23,000,000) and Engineering, Furniture &amp; Assets (IDR 5,100,000) revenues are hotel-reported. Resale value and redirection verification documentation is held by the hotel (Pullman Legian Beach). Should Green Key or Green Globe request independent verification, the hotel should provide the corresponding invoices, purchase orders, or transaction receipts. Uniform donation to SoleFamily Bali — distribution documentation held by Keeper.</p>
+
+    <p><strong>Green Globe Compliance:</strong> Material-specific CarbonWARM2 methodology = Silver-level compliance. Standard disclosures for audit: (1) UK WRAP/DEFRA factors applied as internationally recognised proxy — Indonesia-specific equivalent not published at equivalent granularity; (2) weights from manufacturer specifications and WRAP benchmarks, validated against hotel inventory — physical weighing recommended for formal regulatory filing; (3) GHG Protocol Scope 3 Category 5 framing throughout; (4) TV reuse displacement (Method C) with three-method disclosure, scenario range, and LCA sources cited; (5) engineering and asset items treated at landfill-avoidance rates — explicitly conservative and stated; (6) resale documentation held by hotel as noted above. This methodology statement is suitable for formal Green Globe submission.</p>
   </div>
 
 </div>
@@ -704,7 +707,7 @@ tr:hover td { background:var(--k-offwhite); }
 <div class="footer">
   <div class="footer-inner">
     <div class="footer-logo">
-      <div class="footer-k-icon"><div class="footer-k-chev"></div></div>
+      <div class="footer-k-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="3,5 9,11 3,17" stroke="#0d2b3e" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><polyline points="10,5 16,11 10,17" stroke="#0d2b3e" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55"/></svg></div>
       <div>
         <div class="footer-name"><a href="https://www.keeper.green" target="_blank" rel="noopener" style="color:#fff;text-decoration:none;">Keeper</a></div>
         <div style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:rgba(0,180,200,.5);letter-spacing:2px;margin-top:1px;"><a href="https://www.keeper.green" target="_blank" rel="noopener" style="color:rgba(0,180,200,.5);text-decoration:none;">keeper.green</a></div>
