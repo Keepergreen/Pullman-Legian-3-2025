@@ -287,7 +287,7 @@ tr:hover td { background:var(--k-offwhite); }
       </div>
     </div>
     <div class="header-right">
-      <span class="hb hb-g">100% Diverted at Point of Disposal</span>
+      <span class="hb hb-g">100% of Designated Inventory Diverted</span>
       <span class="hb hb-t">DEFRA 2023 Verified</span>
       <span class="hb hb-t">8,833 kg CO₂e Avoided</span>
       <span class="hb hb-s">GHG Protocol Scope 3</span>
@@ -315,7 +315,7 @@ tr:hover td { background:var(--k-offwhite); }
     </div>
     <div class="kpi kc3">
       <div class="kpi-ico">💰</div>
-      <div class="kpi-val">IDR 78.2M <span class="conf">confirmed</span></div>
+      <div class="kpi-val">IDR 78.2M <span class="conf">reported total value</span></div>
       <div class="kpi-unit">revenue generated</div>
       <div class="kpi-lbl">TVs IDR 50.1M · Linen &amp; Room Disposal IDR 23M · Eng &amp; Assets IDR 5.1M</div>
     </div>
@@ -323,7 +323,7 @@ tr:hover td { background:var(--k-offwhite); }
       <div class="kpi-ico">👥</div>
       <div class="kpi-val">100–140</div>
       <div class="kpi-unit">people supported (est.)</div>
-      <div class="kpi-lbl">Based on SoleFamily Bali distribution ratios · 325 uniforms donated</div>
+      <div class="kpi-lbl">Indicative estimate based on SoleFamily Bali historical distribution averages; not independently verified · 325 uniforms donated</div>
     </div>
     <div class="kpi kc5">
       <div class="kpi-ico">📦</div>
@@ -334,7 +334,7 @@ tr:hover td { background:var(--k-offwhite); }
     <div class="kpi kc6">
       <div class="kpi-ico">📐</div>
       <div class="kpi-val">~50 m²</div>
-      <div class="kpi-unit">storage cleared</div>
+      <div class="kpi-unit">storage cleared (approximate, based on asset estimate volumes)</div>
       <div class="kpi-lbl">Basement floor area freed — includes furniture &amp; equipment</div>
     </div>
   </div>
@@ -367,7 +367,7 @@ tr:hover td { background:var(--k-offwhite); }
   <!-- ── CHARTS ────────────────────────────────────── -->
   <div class="sh"><span class="sh-accent"></span><span class="sh-lbl">Category analysis</span><div class="sh-line"></div></div>
   <div class="card" style="margin-bottom:18px;">
-    <div class="ch"><h3>Weight by Category — Absolute (kg)</h3><span class="cs">3,617 kg total · hover segments for detail</span></div>
+    <div class="ch"><h3>Weight by Category — Absolute (kg)</h3><span class="cs">3,619 kg total · hover segments for detail</span></div>
     <div class="cb">
       <div class="sbar" id="sbar"></div>
       <div class="sleg" id="sleg"></div>
@@ -379,13 +379,13 @@ tr:hover td { background:var(--k-offwhite); }
       <div class="cb"><div class="h300"><canvas id="co2c"></canvas></div></div>
     </div>
     <div class="card">
-      <div class="ch"><h3>Weight Diverted — Proportional Share</h3><span class="cs">% of 3,617 kg total · each category's contribution</span></div>
+      <div class="ch"><h3>Weight Diverted — Proportional Share</h3><span class="cs">% of 3,619 kg total · each category's contribution</span></div>
       <div class="cb"><div style="position:relative;height:330px;"><canvas id="wtc"></canvas></div></div>
     </div>
   </div>
   <div class="g3 gap">
     <div class="card">
-      <div class="ch"><h3>Revenue Split</h3><span class="cs">IDR 74M total — both confirmed</span></div>
+      <div class="ch"><h3>Revenue Split</h3><span class="cs">IDR 78.2M total — TVs Keeper-confirmed · Linen, Eng & Assets hotel-reported</span></div>
       <div class="cb"><div class="h240"><canvas id="revc"></canvas></div></div>
     </div>
     <div class="card">
@@ -453,7 +453,7 @@ tr:hover td { background:var(--k-offwhite); }
       </table>
     </div>
     <div style="padding:10px 16px;font-size:10px;color:#7aa8b8;background:#f0f8fa;border-top:1px solid #e4eff4;font-family:'IBM Plex Mono',monospace;line-height:1.7;">
-      ¹ Room Disposal sold collectively with Linen for IDR 23,000,000 confirmed total. &nbsp;|&nbsp; ² WEEE/electricals: WRAP CarbonWARM2 0.004 kg CO₂e/kg · Textiles: 0.492 · Furniture/mixed: DEFRA 0.467 · Glass/ceramic/plastic: 0.004 · Weights from WRAP benchmarks &amp; manufacturer specs.
+      ¹ Room Disposal sold collectively with Linen for IDR 23,000,000 confirmed total. &nbsp;|&nbsp; ² WEEE/electricals: WRAP CarbonWARM2 0.004 kg CO₂e/kg · Textiles: 0.492 · Furniture/mixed: DEFRA 0.467 · Glass/ceramic/plastic: 0.004 · Weights from WRAP benchmarks &amp; manufacturer specs. &nbsp;|&nbsp; ³ <strong>Data verification tiers:</strong> TVs &amp; Uniforms — weights, counts and TV revenue independently verified by Keeper from hotel spreadsheets and manufacturer specs. Linen, Room Disposal &amp; Engineering categories — weights, counts and revenues are <em>hotel-reported</em>; Keeper has not independently verified these figures. For formal Green Key/Green Globe audit, the hotel should provide source invoices and spreadsheets.
     </div>
   </div>
 
@@ -469,14 +469,14 @@ tr:hover td { background:var(--k-offwhite); }
   <!-- ── TV CO₂e METHODOLOGY ──────────────────────── -->
   <div class="sh"><span class="sh-accent"></span><span class="sh-lbl">Television CO₂e — three accounting methods</span><div class="sh-line"></div></div>
   <div style="background:#f0f8fa;border:1px solid #c8dde4;border-radius:6px;padding:16px 20px;margin-bottom:16px;font-size:12px;color:#5a7a88;line-height:1.7;">
-    <strong style="color:var(--k-navy);">Why the TV CO₂e figure depends on methodology:</strong> Electronics are chemically inert in landfill — they produce near-zero methane. A landfill-avoided factor (Method A) gives 2.3 kg. But when TVs are <em>resold</em>, buyers avoid purchasing new ones — the correct question becomes: what manufacturing CO₂e was avoided? Method C (Reuse Displacement) answers this and is the industry-standard for confirmed resale scenarios.
+    <strong style="color:var(--k-navy);">Why the TV CO₂e figure depends on methodology:</strong> Electronics generate negligible methane emissions in landfill relative to organic materials — a landfill-avoided factor (Method A) gives 2.3 kg. But when TVs are <em>resold</em>, buyers avoid purchasing new ones — the correct question becomes: what manufacturing CO₂e was avoided? Method C (Reuse Displacement) is a recognised reuse-displacement approach used within Scope 3 circularity accounting frameworks where confirmed resale exists.
   </div>
   <div class="mc-row gap">
     <div class="mc mc-off">
       <div class="mc-tag">Method A · WRAP CarbonWARM2</div>
       <div class="mc-num">2.3</div>
       <div class="mc-unit">kg CO₂e avoided</div>
-      <div class="mc-desc">Landfill-avoided only. WEEE factor 0.004 kg CO₂e/kg. Electronics are inert in landfill — no methane generation. Physically correct but answers the wrong question for a resale scenario.</div>
+      <div class="mc-desc">Landfill-avoided only. WEEE factor 0.004 kg CO₂e/kg. Electronics generate negligible methane emissions in landfill relative to organic materials. Physically correct but answers the wrong question for a resale scenario.</div>
       <span class="mc-pill">not adopted · wrong framing for resale</span>
     </div>
     <div class="mc mc-off">
@@ -521,6 +521,7 @@ tr:hover td { background:var(--k-offwhite); }
         <tbody id="engTb"></tbody>
         <tfoot><tr class="tf"><td>Subtotal (35 lines · 136 items)</td><td></td><td class="tr">1,881.3</td><td class="tr">504.9</td></tr></tfoot>
       </table></div>
+      <p style="font-size:10px;color:#5a7a88;margin:6px 8px 0;line-height:1.4;">† Mattress Extra Bed ×2 classified under textile-dominant soft furnishings (factor 0.492) for conservative simplification; DEFRA furniture factor (0.467) would give a marginally lower result.</p>
     </div>
   </div>
 
@@ -531,7 +532,7 @@ tr:hover td { background:var(--k-offwhite); }
       <div class="tw"><table>
         <thead><tr><th>Item</th><th class="tr">Qty</th><th class="tr">Unit (kg)</th><th class="tr">Total (kg)</th><th class="tr">CO₂e (kg)</th></tr></thead>
         <tbody id="dispTb"></tbody>
-        <tfoot><tr class="tf"><td>Subtotal</td><td></td><td></td><td class="tr">344.9</td><td class="tr">145.5</td></tr></tfoot>
+        <tfoot><tr class="tf"><td>Subtotal</td><td></td><td></td><td class="tr">346.9</td><td class="tr">145.6</td></tr></tfoot>
       </table></div>
     </div>
     <div class="card">
@@ -558,10 +559,10 @@ tr:hover td { background:var(--k-offwhite); }
   <!-- ── SOCIAL BAND ───────────────────────────────── -->
   <div class="sh"><span class="sh-accent"></span><span class="sh-lbl">Social impact</span><div class="sh-line"></div></div>
   <div class="soc-grid gap">
-    <div class="soc"><div class="soc-n">100–140</div><div class="soc-l">Vulnerable people estimated to receive clothing in remote Bali villages, based on SoleFamily Bali NGO distribution ratios</div></div>
+    <div class="soc"><div class="soc-n">100–140</div><div class="soc-l">Estimated beneficiaries — indicative estimate based on SoleFamily Bali's historical NGO clothing distribution averages; not independently verified at recipient level</div></div>
     <div class="soc"><div class="soc-n">325</div><div class="soc-l">Uniform pieces across 11 departments donated to villagers in impoverished areas of Bali</div></div>
     <div class="soc"><div class="soc-n" style="font-size:28px;">IDR 6.5M</div><div class="soc-l">Estimated secondhand market in-kind value (conservative lower-mid of Tokopedia / Carousell ID pricing)</div></div>
-    <div class="soc"><div class="soc-n">0</div><div class="soc-l">Items sent to landfill at point of hotel disposal — 100% of designated inventory diverted via confirmed resale or NGO donation</div></div>
+    <div class="soc"><div class="soc-n">0</div><div class="soc-l">Items sent directly to landfill by the hotel at point of disposal — 100% of designated inventory redirected from direct hotel disposal pathways via confirmed resale or NGO donation</div></div>
   </div>
 
   <!-- ── TESTIMONIAL ───────────────────────────────── -->
@@ -600,7 +601,7 @@ tr:hover td { background:var(--k-offwhite); }
   <div class="card gap">
     <div class="ch"><h3>Indonesian Tax Documentation Trail</h3><span class="cs">UU PPh No.36/2008 · PMK 90/PMK.03/2020</span></div>
     <div class="tax-hdr">
-      Under Indonesian Income Tax Law (Pasal 4 ayat 3, UU PPh No.36/2008) and PMK 90/2020: in-kind donations to a registered yayasan are <strong>excluded from PPh income tax objects</strong> provided no business relationship exists between donor and recipient. Documentation below is required to support this treatment and corporate ESG reporting. <strong>All completed paperwork and documentation referenced below is included in the attachments to this report.</strong>
+      Under Indonesian tax law, in-kind donations to a registered yayasan may be treated as excluded from PPh income tax objects (Pasal 4 ayat 3, UU PPh No.36/2008) where relevant conditions are met. Whether this treatment applies to a specific hotel's donation — and how it should be reported in the SPT Tahunan — depends on the hotel's individual tax position and must be confirmed by a registered Indonesian tax consultant (<em>konsultan pajak terdaftar</em>) before any SPT filing. The documentation below supports both corporate ESG/CSR reporting and, where tax adviser sign-off is obtained, the substantiation required for any tax treatment. <strong>All completed paperwork and documentation referenced below is included in the attachments to this report.</strong>
     </div>
     <div class="tw"><table>
       <thead><tr><th>#</th><th>Document Required</th><th>Purpose</th><th>Who Prepares</th><th>Status</th></tr></thead>
@@ -635,14 +636,14 @@ tr:hover td { background:var(--k-offwhite); }
         <tr>
           <td><strong>Carbon Tracking</strong></td>
           <td style="font-size:11.5px;color:#9ab8c4;">Not recorded. Weight untracked, no CO₂e calculation, no methodology.</td>
-          <td style="font-size:11.5px;color:#0d2b3e;">8,621 kg CO₂e avoided. Three methods disclosed. Green Globe ready.</td>
+          <td style="font-size:11.5px;color:#0d2b3e;">8,833 kg CO₂e avoided. Three methods disclosed. Prepared for audit review with disclosed assumptions.</td>
           <td><span class="fp" style="background:rgba(0,180,200,.1);color:#007a8a;font-size:9px;">FULLY CAPTURED</span></td>
         </tr>
         <tr>
           <td><strong>Revenue Optimisation</strong></td>
           <td style="font-size:11.5px;color:#9ab8c4;">Items managed ad-hoc: limited reseller network, limited visibility, limited revenue maximisation. Lack of clear process opens opportunity for assets to lose value in storage and depreciate further.</td>
           <td style="font-size:11.5px;color:#0d2b3e;">IDR 50.1M confirmed TV revenue. IDR 23M linen + IDR 5.1M engineering & assets confirmed.</td>
-          <td><span class="fp" style="background:rgba(34,197,94,.1);color:#16a34a;font-size:9px;">IDR 81M GENERATED</span></td>
+          <td><span class="fp" style="background:rgba(34,197,94,.1);color:#16a34a;font-size:9px;">IDR 78.2M GENERATED</span></td>
         </tr>
         <tr>
           <td><strong>NGO Connection</strong></td>
@@ -653,7 +654,7 @@ tr:hover td { background:var(--k-offwhite); }
         <tr>
           <td><strong>Tax Benefit</strong></td>
           <td style="font-size:11.5px;color:#9ab8c4;">In-kind donation value undocumented. PPh exclusion not claimed. No audit trail.</td>
-          <td style="font-size:11.5px;color:#0d2b3e;">IDR 6.5M in-kind valuation documented. 10-item tax trail prepared. PPh exclusion applicable.</td>
+          <td style="font-size:11.5px;color:#0d2b3e;">IDR 6.5M in-kind valuation documented. 10-item CSR documentation trail prepared. PPh treatment to be confirmed by tax adviser before SPT filing.</td>
           <td><span class="fp" style="background:rgba(240,180,41,.1);color:#a06010;font-size:9px;">IDR 6.5M DOCUMENTED</span></td>
         </tr>
         <tr>
@@ -699,6 +700,17 @@ tr:hover td { background:var(--k-offwhite); }
     <p style="margin-bottom:10px;"><strong>Resale &amp; Redirection Verification:</strong> TV revenue (IDR 50,100,000) confirmed in hotel asset disposal spreadsheet. Linen, Room Disposal (combined IDR 23,000,000) and Engineering, Furniture &amp; Assets (IDR 5,100,000) revenues are hotel-reported. Resale value and redirection verification documentation is held by the hotel (Pullman Legian Beach). Should Green Key or Green Globe request independent verification, the hotel should provide the corresponding invoices, purchase orders, or transaction receipts. Uniform donation to SoleFamily Bali — distribution documentation held by Keeper.</p>
 
     <p><strong>Green Globe Compliance:</strong> Material-specific CarbonWARM2 methodology = Silver-level compliance. Standard disclosures for audit: (1) UK WRAP/DEFRA factors applied as internationally recognised proxy — Indonesia-specific equivalent not published at equivalent granularity; (2) weights from manufacturer specifications and WRAP benchmarks, validated against hotel inventory — physical weighing recommended for formal regulatory filing; (3) GHG Protocol Scope 3 Category 5 framing throughout; (4) TV reuse displacement (Method C) with three-method disclosure, scenario range, and LCA sources cited; (5) engineering and asset items treated at landfill-avoidance rates — explicitly conservative and stated; (6) resale documentation held by hotel as noted above. This methodology statement is suitable for formal Green Globe submission.</p>
+    <div style="margin-top:18px;padding:14px 16px;background:#f7f9fb;border:1px solid #d0dbe5;border-radius:6px;">
+      <p style="font-size:11px;font-weight:700;color:#0d2b3e;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.05em;">Limitations &amp; Assumptions</p>
+      <p style="font-size:10.5px;color:#444;line-height:1.55;margin:0 0 6px;">The following items involve estimates, hotel-reported values, or non-independent verifications. They are fully disclosed and do not invalidate the report, but should be noted for any formal audit submission:</p>
+      <ul style="font-size:10.5px;color:#444;line-height:1.6;margin:0;padding-left:18px;">
+        <li><strong>Estimated values:</strong> Linen &amp; uniform unit weights are derived from published hotel-grade GSM benchmarks — not from physical weighing of the specific items. TV CO₂e (100 kg/unit) is a conservative industry mid-point estimate (range 50–150 kg/unit); no model-specific LCA exists for either TV model. Mattress Extra Bed ×2 uses the textile factor (0.492) as a conservative simplification. Stick Mop uses a blended factor (~0.467). Storage cleared (~50 m²) is an approximate estimate based on asset volumes.</li>
+        <li><strong>Hotel-reported values:</strong> Linen &amp; Room Disposal revenue (IDR 23,000,000) and Engineering &amp; Assets revenue (IDR 5,100,000) are stated in hotel spreadsheets and have not been independently verified by Keeper against underlying sale invoices. The hotel holds these documents.</li>
+        <li><strong>Non-independent verifications:</strong> Beneficiary count (100–140 people) is an indicative estimate based on SoleFamily Bali's historical NGO distribution averages and has not been verified at recipient level. LG 32LD461C unit weight (8.12 kg) is derived from the LG 32LD450 sibling specification — the specific 32LD461C sheet was not separately published.</li>
+        <li><strong>Reuse-displacement methodology uncertainty:</strong> Method C (GHG Protocol Scope 3 Category 5 Reuse Displacement) is a recognised approach within circularity accounting frameworks but involves an assumed displacement ratio of 1:1 (each reused unit fully displaces one new purchase). The actual displacement effect may be lower. This uncertainty is disclosed per GHG Protocol transparency requirements; the scenario range (3,900–11,700 kg CO₂e) reflects manufacturing footprint uncertainty only. Three methods are disclosed so reviewers can apply their own preferred approach.</li>
+        <li><strong>Diversion claim scope:</strong> "100% of designated inventory redirected from direct hotel disposal pathways" refers to items the hotel designated for this programme. It does not represent a claim about the hotel's total waste stream or downstream end-of-life handling by third-party resellers.</li>
+      </ul>
+    </div>
   </div>
 
 </div>
@@ -717,7 +729,7 @@ tr:hover td { background:var(--k-offwhite); }
     </div>
     <div class="footer-sub">
       ESG Diversion Impact Report · March 2026<br>
-      WRAP CarbonWARM2 / DEFRA 2023 &nbsp;·&nbsp; EPA WARM v16 &nbsp;·&nbsp; GHG Protocol Scope 3 Cat.5 &nbsp;·&nbsp; Carbon Trust TV LCA &nbsp;·&nbsp; 3,617 kg Diverted · Zero Landfill Achieved
+      WRAP CarbonWARM2 / DEFRA 2023 &nbsp;·&nbsp; EPA WARM v16 &nbsp;·&nbsp; GHG Protocol Scope 3 Cat.5 &nbsp;·&nbsp; Carbon Trust TV LCA &nbsp;·&nbsp; 3,619 kg Diverted · Zero Landfill Achieved
     </div>
   </div>
 </div>
